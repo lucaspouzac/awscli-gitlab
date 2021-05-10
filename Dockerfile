@@ -1,6 +1,6 @@
-FROM alpine:3.6
+FROM alpine:3.13.5
 
-ARG VERSION_TERRAFORM="0.11.11"
+ARG VERSION_TERRAFORM="0.15.3"
 
 RUN apk -v --update add zip ca-certificates curl python py-pip groff less mailcap gettext && \
     apk add --virtual build_deps libintl && \
