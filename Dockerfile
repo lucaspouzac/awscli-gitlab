@@ -10,5 +10,5 @@ RUN apk -v --update add zip ca-certificates curl py-pip groff less mailcap gette
     rm /usr/local/bin/terraform.zip && \
     mv /usr/bin/envsubst /usr/local/bin/envsubst && \
     apk del build_deps && \
-    apk -v --purge del py-pip curl && \
+    apk -v --purge del curl && \
     rm /var/cache/apk/*
